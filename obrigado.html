@@ -1,191 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '840054527125043');
-fbq('track', 'PageView');
-fbq('track', 'Purchase', {value: 34.99, currency: 'BRL'});
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=840054527125043&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Parabéns! Seu acesso está a caminho — Os Segredos da Bíblia</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=EB+Garamond:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    :root {
-        --black: #050507;
-        --dark: #0b0b11;
-        --gold: #c79b22;
-        --gold2: #f0c94b;
-        --text: #e8dfcf;
-        --muted: #b7ae9f;
-        --serif: 'EB Garamond', serif;
-        --display: 'Cinzel', serif;
-        --sans: 'Inter', sans-serif;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-        background: var(--black);
-        color: var(--text);
-        font-family: var(--serif);
-        line-height: 1.6;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        text-align: center;
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 60px 20px;
-        flex: 1;
-    }
-    .eyebrow {
-        font: 700 12px var(--display);
-        letter-spacing: 4px;
-        color: var(--gold);
-        text-transform: uppercase;
-        margin-bottom: 15px;
-    }
-    h1 {
-        font: 900 clamp(28px, 5vw, 48px) var(--display);
-        color: #fff;
-        margin-bottom: 20px;
-        line-height: 1.1;
-    }
-    .status-box {
-        background: rgba(44, 107, 68, 0.1);
-        border: 1px solid #2c6b44;
-        color: #88d6a4;
-        padding: 12px 20px;
-        border-radius: 4px;
-        display: inline-block;
-        font: 700 14px var(--sans);
-        margin-bottom: 40px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    .video-placeholder {
-        width: 100%;
-        aspect-ratio: 16/9;
-        background: #000;
-        border: 1px solid rgba(199, 155, 34, 0.3);
-        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        margin-bottom: 40px;
-        display: grid;
-        place-items: center;
-    }
-    .steps {
-        text-align: left;
-        background: var(--dark);
-        padding: 30px;
-        border: 1px solid rgba(255,255,255,0.05);
-        margin-bottom: 40px;
-    }
-    .steps h2 {
-        font: 700 20px var(--display);
-        color: var(--gold2);
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .step-item {
-        display: flex;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    .step-number {
-        flex: none;
-        width: 30px;
-        height: 30px;
-        background: var(--gold);
-        color: #000;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-weight: 900;
-        font-family: var(--sans);
-    }
-    .step-text strong { color: #fff; display: block; margin-bottom: 4px; }
-    .step-text p { font-size: 16px; color: var(--muted); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso! Seu acesso está chegando - Os Segredos da Bíblia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Marcellus&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --black: #050507;
+            --dark: #0b0b11;
+            --gold: #c79b22;
+            --gold2: #f0c94b;
+            --cream: #f6efe0;
+            --text: #e8dfcf;
+            --muted: #b7ae9f;
+            --serif: 'EB Garamond', Georgia, serif;
+            --display: 'Cinzel', serif;
+            --sub: 'Marcellus', serif;
+        }
 
-    .cta-button {
-        display: inline-block;
-        background: linear-gradient(135deg, #d9aa25, #f6d25c);
-        color: #000;
-        text-decoration: none;
-        font: 900 16px var(--display);
-        padding: 20px 40px;
-        letter-spacing: 1px;
-        transition: 0.3s;
-        border-radius: 2px;
-        box-shadow: 0 10px 30px rgba(199, 155, 34, 0.2);
-    }
-    .cta-button:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(199, 155, 34, 0.4); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background: var(--black); 
+            color: var(--text); 
+            font-family: var(--serif); 
+            line-height: 1.6;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-    footer {
-        padding: 40px;
-        font: 500 12px var(--sans);
-        color: rgba(255,255,255,0.2);
-        border-top: 1px solid rgba(255,255,255,0.05);
-    }
-</style>
+        .container { max-width: 700px; margin: 0 auto; }
+
+        .success-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(44, 107, 68, 0.2);
+            border: 1px solid #2c6b44;
+            color: #4ade80;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-family: var(--sub);
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        h1 { 
+            font-family: var(--display); 
+            font-size: clamp(28px, 5vw, 42px); 
+            color: var(--cream);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-family: var(--sub);
+            font-size: 18px;
+            color: var(--gold);
+            margin-bottom: 40px;
+        }
+
+        .steps {
+            text-align: left;
+            background: var(--dark);
+            border: 1px solid rgba(199, 155, 34, 0.2);
+            padding: 40px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            margin-bottom: 30px;
+        }
+
+        .step:last-child { margin-bottom: 0; }
+
+        .step-number {
+            font-family: var(--display);
+            color: var(--gold2);
+            font-size: 24px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .step h3 {
+            font-family: var(--sub);
+            color: var(--cream);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #d9aa25, #f6d25c);
+            color: #000;
+            text-decoration: none;
+            font-family: var(--display);
+            font-weight: 900;
+            padding: 22px 40px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(199, 155, 34, 0.3);
+            transition: 0.3s;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(199, 155, 34, 0.5);
+        }
+
+        .support-box {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        .email-link {
+            color: var(--gold2);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '840054527125043');
+        fbq('track', 'PageView');
+        fbq('track', 'Purchase', {value: 34.99, currency: 'BRL'});
+    </script>
 </head>
 <body>
-    <div class="container">
-        <p class="eyebrow">Acesso Confirmado</p>
-        <h1>Parabéns pela sua decisão!</h1>
-        <div class="status-box">✓ Pagamento aprovado com sucesso</div>
 
-        <!-- Placeholder para Vídeo de Boas-vindas -->
-        <div class="video-placeholder">
-            <div style="text-align: center; color: var(--gold2);">
-                <p style="font: 700 14px var(--sans); letter-spacing: 2px; text-transform: uppercase;">[ Vídeo de Boas-vindas ]</p>
-                <p style="font-size: 12px; color: var(--muted); margin-top: 8px;">Recomendado: Vídeo curto de 1 a 2 minutos</p>
-            </div>
+    <div class="container">
+        <div class="success-badge">
+            <span>✓ Pagamento Confirmado</span>
         </div>
+
+        <h1>Seja bem-vindo à sua jornada de descoberta</h1>
+        <p class="subtitle">Siga os passos abaixo para acessar seu material imediatamente.</p>
 
         <div class="steps">
-            <h2>Próximos Passos Importantes:</h2>
-            <div class="step-item">
-                <div class="step-number">1</div>
-                <div class="step-text">
-                    <strong>Verifique seu E-mail</strong>
-                    <p>Você receberá um e-mail da plataforma <b>Kiwify</b> com seus dados de acesso. Procure pelo assunto: "Seu acesso ao produto..."</p>
-                </div>
+            <div class="step">
+                <span class="step-number">01.</span>
+                <h3>Verifique seu E-mail</h3>
+                <p>Procure por uma mensagem enviada pela <strong>Cakto</strong>. Ela contém os seus dados de acesso exclusivos e o link oficial da nossa área de membros. Caso não encontre na caixa de entrada em até 5 minutos, verifique as pastas de 'Promoções' ou 'Spam'.</p>
             </div>
-            <div class="step-item">
-                <div class="step-number">2</div>
-                <div class="step-text">
-                    <strong>Olhe a Caixa de Spam</strong>
-                    <p>Caso não encontre na caixa de entrada em 5 minutos, verifique as pastas "Promoções" ou "Spam".</p>
-                </div>
+
+            <div class="step">
+                <span class="step-number">02.</span>
+                <h3>Acesse sua Área de Membros</h3>
+                <p>Clique no botão de acesso dentro do e-mail ou use o botão dourado abaixo nesta página. Lá você encontrará o E-book completo, o Audiobook (caso tenha incluído esta opção em sua compra) e todos os seus bônus organizados para leitura e download imediato.</p>
             </div>
-            <div class="step-item">
-                <div class="step-number">3</div>
-                <div class="step-text">
-                    <strong>Suporte Prioritário</strong>
-                    <p>Se tiver qualquer dificuldade, nossa equipe está pronta para te ajudar. Guarde seu comprovante de compra.</p>
-                </div>
+
+            <div class="step">
+                <span class="step-number">03.</span>
+                <h3>Precisa de Ajuda com o Acesso?</h3>
+                <p>Nossa equipe está à disposição para garantir que você receba todo o seu material. Se tiver qualquer dificuldade técnica ou se o e-mail não chegar, entre em contato conosco através do e-mail: <a href="mailto:segredosdabiblia.of@gmail.com" class="email-link">segredosdabiblia.of@gmail.com</a>.</p>
             </div>
         </div>
 
-        <a href="https://dashboard.kiwify.com.br/" class="cta-button">Acessar minha área de membros →</a>
+        <a href="https://app.cakto.com.br/login" class="cta-button">Acessar minha área de membros →</a>
+
+        <div class="support-box">
+            <p>© 2026 Os Segredos da Bíblia. Todos os direitos reservados.</p>
+        </div>
     </div>
 
-    <footer>
-        © 2026 Higor Mengarda · Os Segredos da Bíblia · Todos os direitos reservados.
-    </footer>
 </body>
 </html>
